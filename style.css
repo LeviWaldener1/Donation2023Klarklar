@@ -1,0 +1,652 @@
+.div1 {
+    width: 1000px;
+    height: 100%;
+    
+   
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
+html {
+    text-align: center;
+    margin: auto;
+    overflow:hidden;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h2 {
+  padding-top: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h1 {
+  padding-top: 5%;
+  font-size:larger;
+}
+
+a {
+    background-color: rgb(0, 255, 0);
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px 40px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: 1000;
+  }
+
+  .div2 {
+    
+    margin-top: 250px;
+  }
+
+  .div3 a{
+  background-color: white;
+  border-color: red;
+  }
+
+  .div3 img {
+    width:30%;
+    height:80px;
+    
+    position: absolute;
+    top:330px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .div4 {
+    margin-top: 300px;
+    float: center;
+    padding-left: 20px;
+   
+  }
+
+  .div18 a{
+      margin-top: 200px;
+      float: right;
+      padding: 20px 40px;
+      background-color: white;
+      border-color: red;
+  }
+
+  .div5 {
+     
+  }
+
+
+.div6 {
+    
+    height: 10%;
+}
+
+
+.div89 {
+    
+
+  margin: 0 auto;
+     float: right;
+     padding-top: 30px;
+   
+    
+  }
+
+  .div8 {
+    
+    margin: 0 auto;
+    float: right;
+    padding-top: 200px;
+     
+   }
+
+
+
+input[type=text] {
+    border: 2px solid rgb(255, 0, 0);
+    font-size: 20px;
+    margin: 40px;
+    width: 300px;
+    background-image:url("glas.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+
+ul {
+    list-style-type: none;
+    height: 150px;
+    margin-left: 110px;
+}
+
+li {
+    margin-top: 50px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 25px;
+    float: left;  
+    padding: 20px 20px;
+    margin: 40px;
+    width: 110px;
+    
+}
+
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ #myUL p {
+  border: 1px solid #ddd; 
+  margin-top: -35px; 
+  background-color: #f6f6f6;
+  padding: 15px; 
+  margin-left: 370px;
+  margin-right: 370px;
+  text-decoration: none; 
+  font-size: 18px; 
+  color: black; 
+  display: block; 
+}
+
+#myUL p:hover:not(.header) {
+  background-color: #eee; 
+}
+
+
+
+.radio-button input[type="radio"] {
+  display: none;
+}      
+
+.radio-button label {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  font-family: Arial;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 2px solid red;
+}      
+
+.radio-button input[type="radio"]:checked+label {
+  background-color: #ff0000;
+  
+}
+
+.radio1 {
+  border-color: red;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  
+}
+input {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  
+}
+
+
+
+.confetti-container {
+  user-select: none;
+  z-index: 10;
+  
+}
+.confetti {
+  position: fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.confetti .square {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--bg);
+  transform: rotate(-140deg);
+}
+
+.confetti .rectangle {
+  width: 1rem;
+  height: 0.5rem;
+  background-color: var(--bg);
+}
+
+.confetti .hexagram {
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 1rem solid var(--bg);
+  position: relative;
+}
+
+.confetti .hexagram:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 1rem solid var(--bg);
+  position: absolute;
+  top: 0.33rem;
+  left: -0.5rem;
+}
+
+.confetti .pentagram {
+  width: 0rem;
+  height: 0rem;
+  display: block;
+  margin: 0.5rem 0;
+  border-right: 1rem solid transparent;
+  border-bottom: 0.7rem solid var(--bg);
+  border-left: 1rem solid transparent;
+  transform: rotate(35deg);
+  position: relative;
+}
+.confetti .pentagram:before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-bottom: 0.8rem solid var(--bg);
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  transform: rotate(-35deg);
+  position: absolute;
+  top: -0.45rem;
+  left: -0.65rem;
+}
+.confetti .pentagram:after {
+  content: "";
+  width: 0rem;
+  height: 0rem;
+  display: block;
+  border-right: 1rem solid transparent;
+  border-bottom: 0.7rem solid var(--bg);
+  border-left: 1rem solid transparent;
+  transform: rotate(-70deg);
+  position: absolute;
+  top: 0.03rem;
+  left: -1.05rem;
+}
+
+.confetti .dodecagram {
+  background: var(--bg);
+  width: 0.8rem;
+  height: 0.8rem;
+  position: relative;
+}
+
+.confetti .dodecagram:before {
+  content: "";
+  height: 0.8rem;
+  width: 0.8rem;
+  background: var(--bg);
+  transform: rotate(30deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.confetti .dodecagram:after {
+  content: "";
+  height: 0.8rem;
+  width: 0.8rem;
+  background: var(--bg);
+  transform: rotate(60deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.confetti .wavy-line {
+  position: relative;
+}
+.confetti .wavy-line::after,
+.confetti .wavy-line::before {
+  content: "";
+  height: 1rem;
+  width: 8rem;
+  background-size: 2rem 1rem;
+  position: absolute;
+  left: -9rem;
+  transform: rotate(90deg);
+}
+
+.confetti .wavy-line::before {
+  background-image: linear-gradient(
+    45deg,
+    transparent,
+    transparent 50%,
+    var(--bg) 50%,
+    transparent 60%
+  );
+  top: 1rem;
+}
+.confetti .wavy-line::after {
+  background-image: linear-gradient(
+    -45deg,
+    transparent,
+    transparent 50%,
+    var(--bg) 50%,
+    transparent 60%
+  );
+}
+
+.confetti i {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.2rem;
+  animation-name: confetti;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: calc(70s / var(--speed));
+}
+
+.confetti i:nth-child(even) {
+  transform: rotate(90deg);
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+input:checked + .confetti-container i {
+  /* display: none; */
+  animation-play-state: paused;
+}
+
+
+
+/* DIAGRAM */
+
+/* Bar Graph Vertical */
+/* Bar Graph Horizontal */
+.bar-graph .year {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  opacity: 0;
+}
+
+.bar-graph-horizontal {
+  max-width: 1000px;
+}
+
+.bar-graph-horizontal > div {
+  float: left;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.bar-graph-horizontal .year {
+  float: left;
+  margin-top: 18px;
+  width: 50px;
+}
+
+.bar-graph-horizontal .bar {
+  border-radius: 3px;
+  height: 55px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 0;
+}
+
+.bar-graph-one .bar::after {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  color: rgb(0, 0, 0);
+  content: attr(data-percentage);
+  font-weight: 700;
+  position: absolute;
+  right: 16px;
+  top: 17px;
+}
+
+.bar-graph-one .bar-one .bar {
+  background-color: #ff0000;
+  -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+  -moz-animation: show-bar-one 1.2s 0.1s forwards;
+  animation: show-bar-one 1.2s 0.1s forwards;
+}
+
+.bar-graph-one .bar-two .bar {
+  background-color: #5292ac;
+  -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+  -moz-animation: show-bar-two 1.2s 0.2s forwards;
+  animation: show-bar-two 1.2s 0.2s forwards;
+}
+
+.bar-graph-one .bar-three .bar {
+  background-color: #ccd3d6;
+  -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+  -moz-animation: show-bar-three 1.2s 0.3s forwards;
+  animation: show-bar-three 1.2s 0.3s forwards;
+}
+
+.bar-graph-one .bar-four .bar {
+  background-color: #ffffff;
+  -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+  -moz-animation: show-bar-four 1.2s 0.4s forwards;
+  animation: show-bar-four 1.2s 0.4s forwards;
+}
+
+/* Bar Graph Horizontal Animations */
+@-webkit-keyframes show-bar-one {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes show-bar-two {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 71%;
+  }
+}
+
+@-webkit-keyframes show-bar-three {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 74.7%;
+  }
+}
+
+@-webkit-keyframes show-bar-four {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 76.8%;
+  }
+}
+
+@-webkit-keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Hjul */
+#container {
+  overflow: hidden;
+}
+
+#container div {
+  width: 10vw;
+  height: 10vw;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 0.5vw solid #000000;
+  position: absolute;
+  background-image: url(hjul.png);
+  background-size: contain;
+  right: 38%;
+  top: 20%;
+}
+
+#spin {
+  z-index: 100;
+  position: absolute;
+  top: 48%;
+  right: 38%;
+  width: 11vw;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1vw;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.3vw; 
+  background: #020000;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+
+#spin:disabled {
+  color: #ff3300;
+}
+
+#wheelBody {
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../Donationsknapp_klar-main/hjul.png);
+  height: 100vh;
+  width: 50vw; 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#wheelText {
+  width: 50vw; 
+  height: 30vh;
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw; 
+  margin: 1vw;
+  overflow: auto;
+  padding-top: 32vh;
+}
+
+#wheelDescription {
+  font-size: 2.5vw; 
+  color: white;
+  margin: 0 auto;
+}
+
+#enlarge {
+  opacity: 0;
+  font-size: 1.5vw; 
+  color: white;
+  z-index: -10;
+  position: absolute;
+  top: 15vh;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 60vw; 
+  height: 70vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+  overflow: auto;
+}
+
+#enlarge button {
+  margin: 20px;
+}
+
+#closeEnlarge {
+  position: absolute;
+  top: 15vh;
+  right: 5vw; 
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  font-size: 1.5vw; 
+  color: white;
+  border: none;
+  background-color: transparent;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+}
+
+#closeEnlarge:hover {
+  color: #666666;
+}
+
+#smallMap {
+  margin-left: 10%;
+  width: 80%;
+  height: 30vh;
+}
+
+.div10 {
+  text-align: center;
+  font-size: small;
+  bottom: 10px;
+  margin: 0;
+}
+
+.div11 {
+  left: 200px;
+  width: 1000px;
+  position: relative;
+  top:40px
+}
+
+.ellerh1 {
+  padding-top: 1%;
+  font-size:larger;
+}
